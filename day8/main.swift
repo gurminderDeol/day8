@@ -8,6 +8,10 @@
 
 import Foundation
 
-print("Hello, World!")
-print("hello")
+class Person
+{
+    var pid : Int = 0
+    var fname : String!
+    var lname : String?
+}
 
