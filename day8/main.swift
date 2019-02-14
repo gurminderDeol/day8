@@ -8,46 +8,22 @@
 
 import Foundation
 
-class Person
-{
-    var pid : Int = 0
-    var fname : String!
-    var lname : String?
 
-    func setData()
-    {
-        lname="Deol"
-    }
-    func display()
-    {
-    print(pid)
-    print(fname)
-    print(lname!)
-        let l = lname ?? "Deol"
-        if let f = fname,let l = lname
-        {
-            let s = f + " " + l
-            print(s)
-        }
-    
-    }
-}
-class Student{
-    var sid : Int
-    var fname : String
-    var lname : String
-init(sid: Int,fname: String,lname: String)
-{
-    self.sid = sid
-    self.fname = fname
-    self.lname = lname
-}
-func display()
-{
-    print(self.sid)
-    print(self.fname)
-    print(self.lname)
-}
-}
+
 var s1 = Student(sid: 11,fname: "deol",lname: "gurminder")
+var s2 = Student(sid: 12,fname: "deolg",lname: "Rimma")
 s1.display()
+var studentArray=[Student]()
+studentArray.append(s1)
+studentArray.append(s2)
+for s in studentArray
+{
+    s.display()
+    
+}
+var c1 = Car()
+c1.vin = "2T23423"
+c1.model = "toyota"
+c1.color = .Blue
+c1.type = "Corolla"
+c1.speed = 100.0
