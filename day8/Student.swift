@@ -19,8 +19,8 @@ class Student{
     }
     func display()
     {
-        print("pid\(self.sid)")
-        print("firstname\(self.fname)")
-        print("lastname \(self.lname)")
+        print("pid : \(self.sid)")
+        print("firstname : \(self.fname)")
+        print("lastname : \(self.lname)")
     }
 }
